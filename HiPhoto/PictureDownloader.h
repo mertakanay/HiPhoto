@@ -16,10 +16,11 @@
 
 @interface PictureDownloader : NSObject
 
-@property NSString *searchText;
-
 @property id<PictureDownloaderDelegate>delegate;
 
--(void)pullPicturesFromAPI;
+@property NSArray *photosArray;
+
+-(void)pullPicturesFromAPIaccordingtoString:(NSString *)string;
+-(void)pictureArrayIsEqualTo:(NSArray *)array;
 
 @end

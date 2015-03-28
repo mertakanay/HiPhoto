@@ -7,6 +7,7 @@
 //
 
 #import "PictureViewController.h"
+#import "Picture.h"
 
 @interface PictureViewController ()
 

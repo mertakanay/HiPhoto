@@ -8,6 +8,7 @@
 
 #import "MainViewController.h"
 #import "PictureDownloader.h"
+#import "Picture.h"
 
 @interface MainViewController ()
 
@@ -17,6 +18,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *favouritesButton;
 
 @property PictureDownloader *downloader;
+@property NSArray *picturesArray;
 
 @end
 
@@ -32,9 +34,17 @@
 
     self.downloader = [PictureDownloader new];
     self.downloader.delegate = self;
-    [self.downloader pullPicturesFromAPI];
+    [self.downloader pullPicturesFromAPIaccordingtoString:self.searchBar.text];
+}
 
-    PictureDownloader *searchText = self.searchBar.text;
+-(void)pictureArrayIsEqualTo:(NSArray *)array
+{
+    self.picturesArray = array;
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    
 }
 
 @end

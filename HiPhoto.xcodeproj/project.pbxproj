@@ -16,6 +16,7 @@
 		3EAC8D4C1AC745FD0020F045 /* HiPhotoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EAC8D4B1AC745FD0020F045 /* HiPhotoTests.m */; };
 		3EAC8D571AC7518F0020F045 /* PictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EAC8D561AC7518F0020F045 /* PictureViewController.m */; };
 		3EAC8D5A1AC752C70020F045 /* PictureDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EAC8D591AC752C70020F045 /* PictureDownloader.m */; };
+		3EAC8D5D1AC765B10020F045 /* Picture.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EAC8D5C1AC765B10020F045 /* Picture.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,8 @@
 		3EAC8D561AC7518F0020F045 /* PictureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PictureViewController.m; sourceTree = "<group>"; };
 		3EAC8D581AC752C70020F045 /* PictureDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PictureDownloader.h; sourceTree = "<group>"; };
 		3EAC8D591AC752C70020F045 /* PictureDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PictureDownloader.m; sourceTree = "<group>"; };
+		3EAC8D5B1AC765B10020F045 /* Picture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Picture.h; sourceTree = "<group>"; };
+		3EAC8D5C1AC765B10020F045 /* Picture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Picture.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +98,8 @@
 				3EAC8D561AC7518F0020F045 /* PictureViewController.m */,
 				3EAC8D581AC752C70020F045 /* PictureDownloader.h */,
 				3EAC8D591AC752C70020F045 /* PictureDownloader.m */,
+				3EAC8D5B1AC765B10020F045 /* Picture.h */,
+				3EAC8D5C1AC765B10020F045 /* Picture.m */,
 				3EAC8D391AC745FD0020F045 /* Main.storyboard */,
 				3EAC8D3C1AC745FD0020F045 /* Images.xcassets */,
 				3EAC8D3E1AC745FD0020F045 /* LaunchScreen.xib */,
@@ -229,6 +234,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EAC8D5D1AC765B10020F045 /* Picture.m in Sources */,
 				3EAC8D381AC745FD0020F045 /* MainViewController.m in Sources */,
 				3EAC8D571AC7518F0020F045 /* PictureViewController.m in Sources */,
 				3EAC8D351AC745FD0020F045 /* AppDelegate.m in Sources */,
@@ -426,6 +432,7 @@
 				3EAC8D511AC745FD0020F045 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3EAC8D521AC745FD0020F045 /* Build configuration list for PBXNativeTarget "HiPhotoTests" */ = {
 			isa = XCConfigurationList;
@@ -434,6 +441,7 @@
 				3EAC8D541AC745FD0020F045 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

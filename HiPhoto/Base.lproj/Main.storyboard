@@ -34,13 +34,18 @@
                                 <rect key="frame" x="72" y="64" width="457" height="44"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ybw-uC-Y4Z">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ybw-uC-Y4Z">
                                 <rect key="frame" x="541" y="71" width="48" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="JWD-8O-fAO"/>
+                                    <constraint firstAttribute="width" constant="48" id="Pae-ve-dyB"/>
+                                </constraints>
                                 <state key="normal" title="Search">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="onSearchButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hq6-3Q-VeF"/>
+                                    <segue destination="veo-68-bXw" kind="show" id="Kjs-cD-wfC"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="boX-gF-9yW">
@@ -65,6 +70,8 @@
                             <constraint firstAttribute="trailingMargin" secondItem="y46-U3-FJf" secondAttribute="trailing" constant="-16" id="ejq-HV-Ean"/>
                             <constraint firstItem="y46-U3-FJf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="gmF-zh-E8T"/>
                             <constraint firstItem="y46-U3-FJf" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="grw-mP-16Z"/>
+                            <constraint firstAttribute="centerY" secondItem="ybw-uC-Y4Z" secondAttribute="centerY" constant="214" id="la6-NT-goq"/>
+                            <constraint firstItem="ybw-uC-Y4Z" firstAttribute="leading" secondItem="Sv4-iR-UAp" secondAttribute="trailing" constant="12" id="muy-eZ-W77"/>
                             <constraint firstAttribute="centerX" secondItem="boX-gF-9yW" secondAttribute="centerX" id="rAc-wz-P9j"/>
                             <constraint firstItem="9hr-3h-ezV" firstAttribute="top" secondItem="boX-gF-9yW" secondAttribute="bottom" constant="13" id="z08-FM-0fg"/>
                         </constraints>
@@ -103,7 +110,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fkr-Sp-Npp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1020" y="297"/>
+            <point key="canvasLocation" x="1122" y="369"/>
         </scene>
     </scenes>
 </document>

@@ -11,18 +11,23 @@
 
 @implementation PictureDownloader
 
--(void)pullPicturesFromAPI
+-(void)pullPicturesFromAPIaccordingtoString:(NSString *)string
 {
-    NSString *url = [NSString stringWithFormat:@"https://api.instagram.com/v1/tags/%@/media/recent?access_token=280154677.df48347.c9d771689060439897d32367dbbca723",self.searchText];
+    NSString *url = [NSString stringWithFormat:@"https://api.instagram.com/v1/tags/%@/media/recent?access_token=280154677.df48347.c9d771689060439897d32367dbbca723",string];
     NSURL *newUrl = [NSURL URLWithString:url];
     NSURLRequest *request = [NSURLRequest requestWithURL:newUrl];
     [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
 
         NSDictionary *photoDictionary = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:nil];
-        NSArray *photosArray = [photoDictionary objectForKey:@"data"];
+        self.photosArray = [photoDictionary objectForKey:@"data"];
 
-        [self.delegate gotPictures:photosArray];
+        [self.delegate gotPictures:self.photosArray];
     }];
+}
+
+-(void)pictureArrayIsEqualTo:(NSArray *)array
+{
+    array = self.photosArray;
 }
 
 @end
