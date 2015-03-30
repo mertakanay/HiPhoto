@@ -17,6 +17,8 @@
 		3EAC8D571AC7518F0020F045 /* PictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EAC8D561AC7518F0020F045 /* PictureViewController.m */; };
 		3EAC8D5A1AC752C70020F045 /* PictureDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EAC8D591AC752C70020F045 /* PictureDownloader.m */; };
 		3EAC8D5D1AC765B10020F045 /* Picture.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EAC8D5C1AC765B10020F045 /* Picture.m */; };
+		3EAC8D5F1AC7FE790020F045 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EAC8D5E1AC7FE790020F045 /* MapKit.framework */; };
+		3EAC8D651AC9013D0020F045 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EAC8D641AC9013D0020F045 /* Social.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,10 @@
 		3EAC8D591AC752C70020F045 /* PictureDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PictureDownloader.m; sourceTree = "<group>"; };
 		3EAC8D5B1AC765B10020F045 /* Picture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Picture.h; sourceTree = "<group>"; };
 		3EAC8D5C1AC765B10020F045 /* Picture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Picture.m; sourceTree = "<group>"; };
+		3EAC8D5E1AC7FE790020F045 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		3EAC8D601AC8E3E10020F045 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
+		3EAC8D621AC8FD720020F045 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		3EAC8D641AC9013D0020F045 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EAC8D651AC9013D0020F045 /* Social.framework in Frameworks */,
+				3EAC8D5F1AC7FE790020F045 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +80,10 @@
 		3EAC8D231AC745FD0020F045 = {
 			isa = PBXGroup;
 			children = (
+				3EAC8D641AC9013D0020F045 /* Social.framework */,
+				3EAC8D621AC8FD720020F045 /* Accounts.framework */,
+				3EAC8D601AC8E3E10020F045 /* Twitter.framework */,
+				3EAC8D5E1AC7FE790020F045 /* MapKit.framework */,
 				3EAC8D2E1AC745FD0020F045 /* HiPhoto */,
 				3EAC8D481AC745FD0020F045 /* HiPhotoTests */,
 				3EAC8D2D1AC745FD0020F045 /* Products */,

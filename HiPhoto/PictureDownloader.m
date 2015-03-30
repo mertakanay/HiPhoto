@@ -9,7 +9,7 @@
 #import "PictureDownloader.h"
 #import "MainViewController.h"
 
-@implementation PictureDownloader
+@implementation PictureDownloader 
 
 -(void)pullPicturesFromAPIaccordingtoString:(NSString *)string
 {
@@ -19,15 +19,11 @@
     [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
 
         NSDictionary *photoDictionary = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:nil];
-        self.photosArray = [photoDictionary objectForKey:@"data"];
+        NSArray *photosArray = [photoDictionary objectForKey:@"data"];
 
-        [self.delegate gotPictures:self.photosArray];
+        [self.delegate gotPictures:photosArray];
     }];
 }
 
--(void)pictureArrayIsEqualTo:(NSArray *)array
-{
-    array = self.photosArray;
-}
 
 @end

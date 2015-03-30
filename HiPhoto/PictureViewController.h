@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Picture.h"
 
 @interface PictureViewController : UIViewController
+
+@property Picture *picture;
+@property NSMutableArray *pictureArray;
+@property NSMutableArray *imageArray;
+@property NSMutableArray *nImageArray;
+@property NSMutableArray *nPictureArray;
 
 @end

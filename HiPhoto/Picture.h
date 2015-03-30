@@ -8,9 +8,16 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import <MapKit/MapKit.h>
 
 @interface Picture : NSObject
 
--(instancetype)initWithDictionary:(NSDictionary *)dictionary onImageView:(UIImage *)image;
+-(instancetype)initWithDictionary:(NSDictionary *)dictionary;
+
+@property UIImage *image;
+@property NSString *caption;
+@property NSNumber *latitude;
+@property NSNumber *longitude;
+@property CLLocationCoordinate2D newCoordinate;
 
 @end

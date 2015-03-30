@@ -18,9 +18,6 @@
 
 @property id<PictureDownloaderDelegate>delegate;
 
-@property NSArray *photosArray;
-
 -(void)pullPicturesFromAPIaccordingtoString:(NSString *)string;
--(void)pictureArrayIsEqualTo:(NSArray *)array;
 
 @end
